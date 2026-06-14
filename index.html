@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kotoba Typing (言葉タイピング) - Japanese Speed Run</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Latih kecepatan mengetik keyboard Jepang (Flick Input) sambil menghafal kosakata Bahasa Jepang (Kata Kerja & Kata Sifat). Game Time Attack yang seru dan adiktif!">
+  <meta name="keywords" content="typing game, japanese typing, belajar bahasa jepang, flick input, kana typing, nihongo, speed run">
+  <meta name="author" content="Antigravity AI">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- PapaParse for CSV parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
+  
+  <!-- Canvas Confetti for High Score Celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+</head>
+<body>
+  
+  <!-- Cyberpunk Background Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  
+  <div class="app-container">
+    
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="logo">
+        <span class="logo-jp">言葉</span>
+        <span class="logo-en">KOTOBA <span class="accent-text">TYPING</span></span>
+      </div>
+      <button id="btn-sound-toggle" class="icon-btn" aria-label="Toggle Sound">
+        <svg id="sound-on-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        <svg id="sound-off-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+      </button>
+    </header>
+
+    <!-- MAIN CARD CONTAINER -->
+    <main class="main-card glass-panel">
+      
+      <!-- ==================== SCREEN 1: START SCREEN ==================== -->
+      <section id="screen-start" class="screen-view active">
+        <div class="hero-section">
+          <h1 class="hero-title">Japanese Flick Speed Run</h1>
+          <p class="hero-subtitle">Asah hafalan kosakata & kecepatan ketik keyboard Jepang asli (Kana/Kanji) dalam mode Time Attack 60 detik.</p>
+        </div>
+        
+        <div class="stats-overview">
+          <div class="stat-badge high-score-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-gold" width="20" height="20"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path><path d="M12 2a6 6 0 0 0-6 6v5a6 6 0 0 0 12 0V8a6 6 0 0 0-6-6z"></path></svg>
+            <div class="badge-content">
+              <span class="badge-label">HIGH SCORE</span>
+              <span id="label-high-score" class="badge-value">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="config-section">
+          <h2 class="config-title">PILIH KATEGORI KATA</h2>
+          <div class="category-grid">
+            <label class="category-pill" for="cat-kerja">
+              <input type="checkbox" id="cat-kerja" checked>
+              <div class="pill-design">
+                <span class="pill-jp">動詞</span>
+                <span class="pill-id">Kata Kerja</span>
+              </div>
+            </label>
+            <label class="category-pill" for="cat-sifat">
+              <input type="checkbox" id="cat-sifat" checked>
+              <div class="pill-design">
+                <span class="pill-jp">形容詞</span>
+                <span class="pill-id">Kata Sifat</span>
+              </div>
+            </label>
+            <label class="category-pill" for="cat-benda">
+              <input type="checkbox" id="cat-benda" checked>
+              <div class="pill-design">
+                <span class="pill-jp">名詞</span>
+                <span class="pill-id">Kata Benda</span>
+              </div>
+            </label>
+            <label class="category-pill" for="cat-keterangan">
+              <input type="checkbox" id="cat-keterangan" checked>
+              <div class="pill-design">
+                <span class="pill-jp">副詞</span>
+                <span class="pill-id">Kata Keterangan</span>
+              </div>
+            </label>
+          </div>
+          
+          <div class="settings-group">
+            <div class="setting-row">
+              <div class="setting-info">
+                <span class="setting-name">Tampilkan Kanji</span>
+                <span class="setting-desc">Tampilkan petunjuk Kanji di atas arti kata</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="setting-kanji" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-actions">
+          <button id="btn-start" class="btn btn-primary btn-glow">
+            <span>MULAI SPEED RUN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </button>
+          <button id="btn-open-vocab" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span>Daftar Kosakata</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== SCREEN 2: GAMEPLAY SCREEN ==================== -->
+      <section id="screen-game" class="screen-view">
+        <!-- TOP CONTROL BAR -->
+        <div class="game-control-bar">
+          <button id="btn-game-home" class="btn-game-home-link" aria-label="Kembali ke Menu Utama">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Kembali ke Menu</span>
+          </button>
+        </div>
+        
+        <!-- TOP HUD -->
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">SKOR</span>
+            <span id="hud-score" class="hud-value font-numeric">0</span>
+          </div>
+          
+          <!-- Timer Circle / Bar -->
+          <div class="hud-timer-container">
+            <div class="timer-bar-bg">
+              <div id="timer-bar-fill" class="timer-bar-fill"></div>
+            </div>
+            <div class="timer-text-overlay">
+              <span id="hud-timer" class="font-numeric">60</span><span class="s-unit">s</span>
+            </div>
+          </div>
+          
+          <div class="hud-item alignment-right">
+            <span class="hud-label">STREAK</span>
+            <span id="hud-streak" class="hud-value font-numeric">0</span>
+          </div>
+        </div>
+
+        <!-- STREAK POPUP ANNOUNCER -->
+        <div id="streak-announcer" class="streak-announcer hidden">
+          <span id="streak-count">5</span>x STREAK! 🔥
+        </div>
+
+        <!-- KANJI BONUS FLOAT -->
+        <div id="kanji-bonus-float" class="kanji-bonus-float hidden">
+          KANJI BONUS! +3s ⚡
+        </div>
+
+        <!-- MAIN QUESTION CARD -->
+        <div class="question-container">
+          <!-- Kanji Clue Container -->
+          <div id="kanji-clue" class="kanji-clue-box">
+            食べる
+          </div>
+          
+          <!-- Target Meaning (Main) -->
+          <div id="target-meaning" class="meaning-display">
+            makan
+          </div>
+          
+          <!-- Visual feedback overlay (Correct / Wrong blink) -->
+          <div id="feedback-overlay" class="feedback-overlay"></div>
+        </div>
+
+        <!-- GAMEPLAY CONTROLS / INPUT -->
+        <div id="game-input-form-container">
+          <form id="game-input-form" class="input-form" autocomplete="off" novalidate onsubmit="return false;">
+            <div class="input-wrapper">
+              <input 
+                type="text" 
+                id="game-input" 
+                placeholder="Ketik Kana / Kanji..." 
+                autocomplete="off" 
+                autocorrect="off" 
+                autocapitalize="off" 
+                spellcheck="false"
+                enterkeyhint="done"
+              >
+              <button type="submit" id="btn-submit" class="submit-btn" aria-label="Kirim Jawaban">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+              </button>
+            </div>
+            <p class="input-hint">Ketuk layar di mana saja untuk memfokuskan kembali keyboard</p>
+          </form>
+        </div>
+        
+        <!-- Quick Stats footer -->
+        <div class="game-footer">
+          <div class="footer-stat">
+            <span>Benar: <strong id="stat-correct-count" class="txt-success font-numeric">0</strong></span>
+          </div>
+          <div class="footer-divider"></div>
+          <div class="footer-stat">
+            <span>Salah: <strong id="stat-wrong-count" class="txt-danger font-numeric">0</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SCREEN 3: GAME OVER SCREEN ==================== -->
+      <section id="screen-gameover" class="screen-view">
+        <div class="gameover-header">
+          <div class="gameover-badge">GAME OVER</div>
+          <h2 class="gameover-title">Hasil Speed Run</h2>
+        </div>
+
+        <!-- RESULTS GRID -->
+        <div class="results-grid">
+          <div class="result-box">
+            <span class="result-label">SKOR AKHIR</span>
+            <span id="go-score" class="result-value accent-text font-numeric">0</span>
+          </div>
+          <div class="result-box">
+            <span class="result-label">MAX STREAK</span>
+            <span id="go-streak" class="result-value font-numeric">0</span>
+          </div>
+          <div class="result-box">
+            <span class="result-label">AKURASI</span>
+            <span id="go-accuracy" class="result-value font-numeric">0%</span>
+          </div>
+        </div>
+
+        <!-- NEW HIGH SCORE NOTIFICATION -->
+        <div id="new-highscore-badge" class="new-highscore-badge hidden">
+          <span>🏆 REKOR BARU! 🏆</span>
+        </div>
+
+        <!-- REVENGE BUTTONS OR NORMAL BUTTONS -->
+        <div class="gameover-controls">
+          <button id="btn-revenge" class="btn btn-danger btn-glow hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" class="animate-pulse"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            <span>BALAS DENDAM (Ulangi Salah)</span>
+          </button>
+          
+          <div class="control-row">
+            <button id="btn-restart" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+              <span>Main Lagi</span>
+            </button>
+            <button id="btn-home" class="btn btn-tertiary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span>Menu Utama</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- MISTAKE LIST SECTION -->
+        <div id="mistakes-section" class="mistakes-section hidden">
+          <h3 class="mistakes-title">Daftar Kata Salah (Saran Belajar)</h3>
+          <div class="mistakes-list-container">
+            <table class="mistakes-table">
+              <thead>
+                <tr>
+                  <th>Kata (Kanji)</th>
+                  <th>Cara Baca (Kana)</th>
+                  <th>Arti</th>
+                </tr>
+              </thead>
+              <tbody id="mistakes-tbody">
+                <!-- Dynamic Content -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SCREEN 4: VOCABULARY LIST SCREEN ==================== -->
+      <section id="screen-vocab" class="screen-view">
+        <!-- TOP CONTROL BAR -->
+        <div class="game-control-bar">
+          <button id="btn-vocab-close" class="btn-game-home-link" aria-label="Kembali ke Menu Utama">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Kembali ke Menu</span>
+          </button>
+        </div>
+
+        <div class="vocab-header">
+          <h2 class="vocab-title">Daftar Kosakata</h2>
+          <p class="vocab-subtitle">Cari dan pelajari cara baca kata sebelum bertanding.</p>
+        </div>
+
+        <!-- SEARCH & FILTER BAR -->
+        <div class="vocab-search-container">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="vocab-search" placeholder="Cari Indonesia, Kanji, atau Kana...">
+          </div>
+          
+          <div class="vocab-filter-row">
+            <button class="filter-pill active" data-filter="all">Semua</button>
+            <button class="filter-pill" data-filter="kerja">動詞 (Kerja)</button>
+            <button class="filter-pill" data-filter="sifat">形容詞 (Sifat)</button>
+            <button class="filter-pill" data-filter="benda">名詞 (Benda)</button>
+            <button class="filter-pill" data-filter="keterangan">副詞 (Ket)</button>
+            <button class="filter-pill" data-filter="reviu">⚠️ Reviu</button>
+          </div>
+        </div>
+
+        <!-- SCROLLABLE LIST CONTAINER -->
+        <div class="vocab-list-container">
+          <div id="vocab-list-items" class="vocab-list-items">
+            <!-- Dynamic items loaded by JS -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+      <p>&copy; 2026 Kotoba Typing. Dioptimalkan untuk Mobile Flick Input Keyboard.</p>
+    </footer>
+
+  </div>
+
+  <!-- Javascript File -->
+  <script src="app.js" defer></script>
+</body>
+</html>

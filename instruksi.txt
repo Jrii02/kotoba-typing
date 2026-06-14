@@ -1,0 +1,39 @@
+# PROJECT SUMMARY: VANILLA JS JAPANESE TYPING SPEED RUN (MOBILE-FIRST)
+
+## 1. OVERVIEW & TUJUAN
+Saya ingin membangun sebuah web app statis murni (Vanilla HTML, CSS, dan JavaScript) untuk media belajar menghafal kosakata bahasa Jepang sekaligus melatih kecepatan mengetik menggunakan keyboard IME Jepang asli (Flick Input/12-Key) di HP. Proyek ini harus sangat ringan, berkinerja tinggi pada perangkat mobile, dan siap dideploy ke Netlify/Vercel hanya dengan drag-and-drop (tanpa framework, tanpa proses build npm).
+
+## 2. BATASAN TEKNIS (CRITICAL RULES)
+* **No Frameworks:** Gunakan murni Vanilla HTML5, CSS3, dan Modern Vanilla JavaScript (ES6+).
+* **Mobile-First Design:** Seluruh layout, ukuran font, dan tombol harus dioptimalkan untuk layar HP dan kenyamanan jempol.
+* **Anti-Keyboard Drop Bug:** Pada perangkat mobile, keyboard seringkali menutup otomatis (lose focus) saat user menekan 'Enter' karena adanya re-render element. Pastikan aplikasi ini mempertahankan focus pada input field (`inputElement.focus()`) setelah jawaban disubmit agar keyboard HP tetap terbuka.
+* **No Romaji Converter Library:** Jangan gunakan library seperti WanaKana.js. User akan mengetik langsung menggunakan huruf Jepang murni (Kana/Kanji) dari keyboard IME bawaan HP mereka. JavaScript hanya perlu mencocokkan string Jepang murni.
+
+## 3. GAMEPLAY MECHANICS (THE HOLY TRINITY OF DOPAMINE)
+Aplikasi ini menggunakan loop permainan cepat berbasis waktu (Time Attack) untuk memicu fokus dan mengusir rasa kantuk:
+
+* **Core Loop:** * Sistem memunculkan "Arti kata dalam Bahasa Indonesia" (dan opsional huruf Kanji-nya di atasnya).
+    * User harus mengetik cara baca (Kana) atau Kanji yang sesuai di kolom input menggunakan keyboard Jepang mereka.
+    * User menekan 'Enter' untuk submit.
+* **Time Attack Mode:** * Game dimulai dengan timer global 60 detik.
+    * Jika jawaban BENAR: Skor bertambah, Waktu mendapat bonus +2 detik.
+    * Jika jawaban SALAH: Waktu dikurangi -5 detik, kata tersebut dimasukkan ke dalam `daftarSalah`.
+    * Game Over terjadi saat waktu menyentuh 0 detik.
+* **Combo Streak:** Menghitung jawaban benar beruntun. Menampilkan visual efek teks (misal: `5x STREAK! 🔥`) jika user berhasil menjawab benar tanpa terputus.
+* **High Score (LocalStorage):** Menyimpan skor tertinggi di browser lokal untuk menantang user memecahkan rekornya sendiri.
+* **The Revenge Mode (Mistake List):** Di layar Game Over, tampilkan daftar kata yang sempat dijawab salah. Sediakan tombol "Balas Dendam". Jika diklik, game akan dimulai ulang namun datanya HANYA mengambil dari kata-kata yang salah tadi.
+
+## 4. DATABASE & STRUKTUR FILE
+Database menggunakan file CSV lokal yang dibagi per kategori (misal: kata_kerja.csv, kata_sifat.csv). Data dibaca menggunakan library ringan **PapaParse via CDN**.
+
+Struktur Folder:
+├── data/
+│   ├── kata_kerja.csv (Kolom: kanji, kana, arti)
+│   └── kata_sifat.csv
+├── index.html
+├── style.css
+└── app.js
+
+---
+INTRUKSI UNTUK AI:
+Pahami rangkuman proyek di atas. Jika kamu sudah paham seluruh konsep, batasan teknis, dan mekanik game yang diinginkan, cukup jawab dengan: "Konsep Proyek dipahami! Saya siap membantu membuat kodenya secara bertahap. Silakan berikan instruksi untuk langkah pertama." Jangan membuat kode apa pun sebelum diminta.
