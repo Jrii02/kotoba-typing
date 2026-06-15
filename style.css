@@ -397,6 +397,29 @@ body {
   align-items: center;
 }
 
+.setting-select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.setting-select option {
+  background: #110e1a; /* Dark dropdown option background */
+  color: var(--text-main);
+}
+
+.setting-select:focus, .setting-select:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .setting-info {
   display: flex;
   flex-direction: column;

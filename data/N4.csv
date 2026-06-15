@@ -1,11 +1,669 @@
-expression,reading,meaning
-遊ぶ,あそぶ,bermain
-集める,あつめる,mengumpulkan
-急ぐ,いそぐ,bergegas
-動く,うごく,bergerak
-送る,おくる,mengirim
-怒る,おこる,marah
-考える,かんがえる,memikirkan
-技術,ぎじゅつ,teknologi
-空港,くうこう,bandara
-安全,あんぜん,aman
+expression,reading,meaning,indonesian_meaning
+踏む,ふむ,"to step on, to tread on",menginjak
+～区,～く,"~ district, ~ ward, ~ borough","distrik, wilayah"
+すっと,すっと,"straight, quickly","langsung, cepat"
+盗む,ぬすむ,to steal; to rob,mencuri
+大抵,たいてい,"generally, usually","biasanya, umumnya"
+とうとう,とうとう,"finally, at last",akhirnya
+ガソリン,ガソリン,"gasoline, petrol",bensin
+鳴る,なる,"to sound, to ring (v.i.)",berbunyi (intransitif)
+しっかり,しっかり,"firmly, steady","dengan kuat, erat"
+生きる,いきる,to live,hidup
+苦い,にがい,bitter,pahit
+沸く,わく,"to boil, to grow hot",mendidih
+意見,いけん,"opinion, view, idea","pendapat, opini"
+やはり; やっぱり,やはり; やっぱり,"as I thought, absolutely","ternyata, seperti dugaan"
+漫画,まんが,"comic (book), cartoon","komik, manga"
+ステレオ,ステレオ,stereo,stereo
+医学,いがく,medical science,ilmu kedokteran
+テキスト,テキスト,text; text book,buku teks
+～月,～つき,month,bulan (durasi)
+折る,おる,"to snap, to break; to bend","mematahkan, melipat"
+～会,～かい,~ meeting,"pertemuan, rapat"
+うかがう,うかがう,to ask,"bertanya, mengunjungi (sopan)"
+聞こえる,きこえる,"to be heard, to be audible",terdengar
+僕,ぼく,I (used by men towards those of equal or lower status),saya (laki-laki)
+必ず,かならず,"surely, certainly","pasti, tentu saja"
+壊す,こわす,"to break, to break down",merusak
+怒る,おこる,to get angry; to scold angrily,marah
+床屋,とこや,barber's (shop),pangkas rambut
+オートバイ,オートバイ,motorcycle (lit: auto-bi(ke)),sepeda motor
+運動,うんどうする,exercise,"olahraga, latihan"
+止む,やむ,"to cease, to stop",berhenti (hujan/tangis)
+もし,もし,if,"jika, seandainya"
+表,おもて,surface; front; outside,"permukaan, bagian depan"
+大学生,だいがくせい,"college student, university student",mahasiswa
+運転手,うんてんしゅ,driver (by occupation),sopir
+予習,よしゅう,preparation of lessons (for class),belajar mandiri (sebelum kelas)
+心配,しんぱいする,"worry, concern",khawatir
+別,べつ,"distinction, different","berbeda, lain"
+非常に,ひじょうに,extremely; very,"sangat, luar biasa"
+お宅,おたく,(someone else's) house; home -- polite word for 家 (いえ) --,rumah (orang lain)
+柔らかい,やわらかい,"soft (in reference to texture), tender","lembut, empuk"
+拾う,ひろう,"to pick up (something), to find","memungut, menemukan"
+～ございます,～ございます,"to be (polite), to exist",ada (sangat sopan)
+気,き,"spirit, mood","perasaan, semangat"
+比べる,くらべる,to compare,membandingkan
+ほとんど,ほとんど,"mostly, almost",hampir seluruhnya
+つもり,つもり,"intention, plan","niat, rencana"
+郊外,こうがい,"suburb, outskirts",pinggiran kota
+だめ,だめ,"useless, no good, hopeless","tidak boleh, percuma"
+売り場,うりば,place where things are sold,"tempat jualan, konter"
+正月,しょうがつ,"New Year, New Year's Day",Tahun Baru
+規則,きそく,"rule, regulation","aturan, regulasi"
+うん,うん,"yes (informal), all right (ok)",ya (informal)
+発音,はつおん,pronunciation,"pelafalan, pengucapan"
+焼く,やく,"to bake, to grill",memanggang
+屋上,おくじょう,rooftop,"atap rumah, balkon atas"
+失礼,しつれい,"discourtesy, impoliteness; Excuse me","tidak sopan, permisi"
+ごみ,ごみ,"trash, garbage",sampah
+アフリカ,アフリカ,Africa,Afrika
+点,てん,"mark, score, grade; point, dot","nilai, poin"
+一生懸命,いっしょうけんめい,"very hard (as in ""to work hard""), with utmost effort",bersungguh-sungguh
+今度,こんど,"now, this time, near future, one of these days, next time","kali ini, berikutnya"
+機会,きかい,"chance, opportunity",kesempatan
+建てる,たてる,to build,membangun
+複雑,ふくざつ,"complexity, complication",rumit
+彼,かれ,"he, boyfriend",dia (laki-laki)
+いらっしゃる,いらっしゃる,"-- honorific expression for いく, くる, and いる --","pergi, datang, ada (sopan)"
+布団,ふとん,futon,futon (kasur jepang)
+大事,だいじ,"important, valuable, serious matter",penting
+贈り物,おくりもの,a gift; a present,"hadiah, kado"
+泥棒,どろぼう,thief; burglar,pencuri
+～製,～せい,made in ~,buatan ~
+注意,ちゅうい,"caution, attention","peringatan, perhatian"
+台風,たいふう,typhoon,"topan, badai"
+日,ひ,"sun, sunshine, day","hari, matahari"
+～軒,～けん,counter for houses,buah (satuan rumah)
+そう,そう,"really, (is that) so; yes, right","begitu, benar"
+通る,とおる,"to pass (by), to go through","melewati, melalui"
+過ぎる,すぎる,"to exceed, to go beyond","melewati, melampaui"
+レポート; リポート,レポート; リポート,report,laporan
+葉,は,leaf,daun
+必要,ひつよう,necessary,"perlu, dibutuhkan"
+課長,かちょう,section manager,kepala seksi
+地震,じしん,earthquake,gempa bumi
+すると,すると,"and, then","lalu, kemudian"
+止める,やめる,"to end, to stop","berhenti, menghentikan"
+ガラス,ガラス,"glass, pane",kaca
+～学部,～がくぶ,department of a university,fakultas (universitas)
+厳しい,きびしい,hard; rigorous; strict,"tegas, keras, ketat"
+エスカレーター,エスカレーター,escalator,eskalator
+人口,じんこう,population,"populasi, penduduk"
+月,つき,moon,bulan (langit)
+絹,きぬ,silk,sutra
+ちっとも,ちっとも,not at all (neg. verb),sama sekali tidak (negatif)
+深い,ふかい,"deep, profound",dalam
+壊れる,こわれる,"to be broken, to break",rusak (intransitif)
+揺れる,ゆれる,"to shake, to sway","bergoyang, bergetar"
+落る,おちる,"to fall, to drop",jatuh
+できるだけ,できるだけ,"if at all possible, as much as possible",sebisa mungkin
+悲しい,かなしい,"sad, sorrowful",sedih
+中学校,ちゅうがっこう,junior high school pupil,SMP
+ガス,ガス,gas,gas
+祈る,いのる,to pray; to wish,"berdoa, berharap"
+盛ん,さかん,"prosperous, active, thriving","makmur, aktif"
+アルバイト,アルバイト,part-time job,kerja paruh waktu
+起こす,おこす,to wake (someone) up,membangunkan
+致す,いたす,-- extra-modest expression for する --,melakukan (sopan)
+噛む,かむ,"to bite, to chew","menggigit, mengunyah"
+赤ちゃん,あかちゃん,"baby, infant",bayi
+浅い,あさい,"shallow, superficial",dangkal
+嘘,うそ,lie,bohong
+小説,しょうせつ,novel,novel
+親,おや,a parent,orang tua
+それに,それに,moreover; besides,"selain itu, lagipula"
+西洋,せいよう,"the West, Western countries",Barat (negara barat)
+思う,おもう,"to think, to feel","berpikir, mengira"
+パート (タイム),パート (タイム),part time (esp. female part time employees),paruh waktu
+時代,じだい,"age, period, epoch, era","zaman, era"
+申し上げる,もうしあげる,"(humble)to say, to tell",mengatakan (sopan)
+～式,～しき,~ ceremony; ~ style,"gaya, upacara"
+出席,しゅっせきする,attendance,"kehadiran, hadir"
+～家,～か,person who is specialized in ~,ahli ~
+迎える,むかえる,to welcome; to meet; to greet,"menyambut, menjemput"
+触る,さわる,"to touch, to feel",menyentuh
+建て,～だて,"~ storied, separate housing",bertingkat ~
+社長,しゃちょう,president of a company,"direktur, presiden perusahaan"
+動物園,どうぶつえん,zoo,kebun binatang
+捕まえる,つかまえる,"to catch, to arrest",menangkap
+季節,きせつ,season (in reference to weather),musim
+寄る,よる,to stop by,"mampir, singgah"
+決まる,きまる,to be set; fixed (v.i.),"ditentukan, diputuskan"
+開く,ひらく,to open; to hold (an event),"membuka, mengadakan"
+逃げる,にげる,"to escape, to run away","melarikan diri, kabur"
+だから,だから,so; therefore,oleh karena itu
+残念,ざんねん,regret; regrettable,"sayang sekali, kecewa"
+畳,たたみ,tatami mat (Japanese straw mat),tatami (tikar jepang)
+丁寧,ていねい,"polite, courteous, careful","sopan, teliti"
+地理,ちり,geography,geografi
+さっき,さっき,a little while ago,"tadi, baru saja"
+怖い,こわい,"scary, frightening","takut, menakutkan"
+包む,つつむ,"to wrap, to cover",membungkus
+なるべく,なるべく,"if possible, as much as possible",sebisa mungkin
+無理,むり,"unreasonable, impossible","mustahil, keterlauan"
+サンドイッチ,サンドイッチ,sandwich,"roti lapis, sandwich"
+会議室,かいぎしつ,conference room,ruang rapat
+品物,しなもの,goods,"barang, produk"
+人形,にんぎょう,"doll, figure",boneka
+利用,りよう,"use, utilization","penggunaan, memanfaatkan"
+飾る,かざる,"to decorate, to adorn",menghias
+止める,とめる,to stop (something),"menghentikan, memarkir"
+恥ずかしい,はずかしい,"ashamed, embarrassed",malu
+いくら～ても,いくら～ても,however much one may ~,bagaimanapun banyaknya ~
+用事,ようじ,business to take care of; tasks; errands,"urusan, keperluan"
+ビル,ビル,(abbr.) building,"gedung, bangunan"
+けんかする,けんかする,quarrel,bertengkar
+頑張る,がんばる,"to try one's best, to try hard, to persist","berjuang, berusaha keras"
+投げる,なげる,"to pitch, to cast away",melempar
+故障,こしょうする,breakdown,"kerusakan, mogok"
+力,ちから,"strength, power","kekuatan, tenaga"
+受ける,うける,"to take (an examination, interview, etc.); to receive","mengikuti (ujian), menerima"
+気分,きぶん,"feeling, mood","perasaan, suasana hati"
+間違える,まちがえる,to make a mistake,"salah, keliru"
+そんな,そんな,"such, like that, that sort of",seperti itu
+星,ほし,star,bintang
+場合,ばあい,"case, situation","kasus, situasi, keadaan"
+やっと,やっと,"at last, finally",akhirnya
+足りる,たりる,to be sufficient; to be enough,"cukup, memadai"
+行う,おこなう,to carry out; to conduct (typically used in written language),"mengadakan, melakukan"
+ぶどう,ぶどう,grapes,anggur (buah)
+無くなる,なくなる,"to disappear, to get lost","hilang, habis"
+準備,じゅんびする,prepare,"persiapan, bersiap"
+世界,せかい,world,dunia
+住所,じゅうしょ,address; place of residence,alamat
+再来月,さらいげつ,the month after next,dua bulan lagi
+林,はやし,"woods, forest",hutan kecil
+倍,ばい,double,"lipat dua, ganda"
+痩せる,やせる,to lose weight,"menjadi kurus, langsing"
+線,せん,"line, wire","garis, kabel"
+戦争,せんそう,war,perang
+決める,きめる,to decide (v.t.),memutuskan (transitif)
+調べる,しらべる,to check; to look up; to inquire; to search,"memeriksa, mencari tahu"
+寝坊,ねぼう,sleeping in late,bangun kesiangan
+パパ,パパ,"papa, daddy","papa, ayah"
+光る,ひかる,"to shine, to glitter","bersinar, berkilau"
+夫,おっと,husband,suami (sendiri)
+雲,くも,cloud,awan
+坂,さか,"slope, hill","lereng, tanjakan"
+～(て) しまう,～(て) しまう,to end up ~,"terlanjur, telanjur ~"
+飛行場,ひこうじょう,airport,bandara
+柔道,じゅうどう,judo,judo
+決して,けっして,never,sama sekali tidak (negatif)
+事務所,じむしょ,office,kantor
+連絡,れんらく,"communication, contact, connection","hubungan, kontak"
+小学校,しょうがっこう,elementary school,SD
+客,きゃく,"guest, customer","tamu, pelanggan"
+昔,むかし,old days; past,"zaman dulu, masa lalu"
+美しい,うつくしい,"beautiful, lovely","indah, cantik"
+捨てる,すてる,"throw away (trash), dump, discard",membuang
+なさる,なさる,-- honorific expression for する --,melakukan (sopan)
+事,こと,"thing(s), matter(s), fact","hal, masalah"
+どんどん,どんどん,quickly and steadily; at a rapid pace,dengan cepat dan mantap
+試合,しあい,"match, game, competition",pertandingan
+適当,てきとう,"fitness, suitability","cocok, sesuai"
+素晴らしい,すばらしい,wonderful; terrific,"luar biasa, hebat"
+美術館,びじゅつかん,"art gallery, art museum",museum seni
+文法,ぶんぽう,grammar,tata bahasa
+終わり,おわり,end,"akhir, selesai"
+壁,かべ,wall,"dinding, tembok"
+一度,いちど,"once, one time","sekali, satu kali"
+お礼,おれい,expression of gratitude; thanking; gift of appreciation; bow,ucapan terima kasih
+親切,しんせつ,kindness,"ramah, baik hati"
+知らせる,しらせる,to notify,memberitahukan
+歯医者,はいしゃ,dentist,dokter gigi
+熱心,ねっしん,enthusiasm,"antusias, tekun"
+始める,はじめる,"to start, to begin",memulai
+もらう,もらう,to receive,"menerima, mendapatkan"
+泣く,なく,to cry,menangis
+治る,なおる,to get better; to recover from illness (v.i.),"sembuh, membaik (intransitif)"
+熱,ねつ,"fever, temperature","demam, panas"
+お祭り,おまつり,festival,"festival, perayaan"
+水道,すいどう,"water service, water line","saluran air, pam"
+匂い,におい,"odor, smell","bau, aroma"
+ベル,ベル,bell,bel
+赤ん坊,あかんぼう,baby,bayi
+おかしい,おかしい,strange; odd; funny,"aneh, lucu"
+事故,じこ,accident,kecelakaan
+変,へん,"strange, odd",aneh
+辞典,じてん,"encyclopedia, reference book","kamus, ensiklopedia"
+残る,のこる,"to remain (v.i.), to be left","tersisa, tinggal (intransitif)"
+立てる,たてる,"to stand (something) up, to erect (something)","mendirikan, menegakkan"
+くれる,くれる,"to give, to do for",memberi (kepada saya)
+～員,～いん,member of ~,anggota ~
+原因,げんいん,"cause, origin, source","penyebab, asal mula"
+驚く,おどろく,"to be surprised, to be astonished",terkejut
+いただく,頂く,-- extra-modest expression for たべる and のむ; humble expression for もらう --,"menerima, makan (rendah hati)"
+祖母,そぼ,grandmother,nenek (sendiri)
+場所,ばしょ,"place, location","tempat, lokasi"
+答,こたえ,"answer, response",jawaban
+もちろん,もちろん,"certainly, of course",tentu saja
+漬ける,つける,"to soak, to moisten, to pickle","merendam, mengasinkan"
+受付,うけつけ,reception(ist) desk,"resepsionis, meja penerima"
+内,うち,"within, inside","di dalam, bagian dalam"
+スクリーン,スクリーン,screen,"layar, screen"
+増える,ふえる,"to increase, to multiply","bertambah, meningkat"
+または,または,"or, otherwise",atau
+けがする,けがする,"injury (to animate object), hurt","terluka, cedera"
+以下,いか,"less than, below","kurang dari, di bawah"
+選ぶ,えらぶ,to choose; to select,memilih
+～ばかり,～ばかり,"just did ~, only",baru saja melakukan ~
+心,こころ,"heart, mind","hati, pikiran"
+～だす,～だす,to start doing ~,mulai melakukan ~
+サラダ,サラダ,salad,salad
+届ける,とどける,to deliver (v.t.),"mengantarkan, menyampaikan"
+挨拶,あいさつする,greet(ing),"menyapa, salam"
+景色,けしき,"scenery, landscape",pemandangan
+確か,たしか,"if I remember correctly; certain, definite","pasti, seingat saya"
+ステーキ,ステーキ,steak,"bistik, steak"
+食料品,しょくりょうひん,"foodstuff, groceries","bahan makanan, sembako"
+森,もり,forest,hutan lebat
+以内,いない,"within, less (no more) than","dalam jangka, kurang dari"
+予定,よてい,"plans, arrangement, schedule","rencana, jadwal"
+オーバー,オーバー,"overcoat; over, exceeding, exaggeration","mantel besar, berlebihan"
+乾く,かわく,to get dry,menjadi kering
+石,いし,stone,batu
+思い出す,おもいだす,"to recall, to remember",mengingat kembali
+踊る,おどる,to dance,menari
+細かい,こまかい,"small; fine, minute","kecil, rinci, halus"
+塗る,ぬる,"to paint, to plaster","mengecat, mengoleskan"
+ご主人,ごしゅじん,"(your, her) husband",suami (orang lain)
+珍しい,めずらしい,"unusual, rare","langka, tidak biasa"
+用,よう,"errand, task, business (to take care of)","keperluan, urusan"
+公務員,こうむいん,"government worker, public servant",pegawai negeri
+お嬢さん,おじょうさん,(someone's) daughter (polite),anak perempuan (orang lain)
+用意,ようい,preparation,"persiapan, menyediakan"
+探す,さがす,"to search, to seek, to look for",mencari
+形,かたち,shape,"bentuk, wujud"
+運転,うんてんする,driving,"menyetir, mengemudi"
+すっかり,すっかり,"all, completely","sepenuhnya, sama sekali"
+アナウンサー,アナウンサー,announcer,"penyiar, komentator"
+お土産,おみやげ,souvenir,oleh-oleh
+消しゴム,けしゴム,eraser,penghapus
+旅館,りょかん,a Japanese inn,penginapan gaya Jepang
+海岸,かいがん,"coast, seashore","pantai, pesisir"
+寂しい,さびしい,"lonely, lonesome",kesepian
+火,ひ,fire,api
+育てる,そだてる,to raise (v.t.); to bring up,"membesarkan, mendidik"
+味噌,みそ,"miso, bean paste",miso (tauco jepang)
+お祝い,おいわい,"congratulation, celebration","selamat, perayaan"
+乗り物,のりもの,vehicle,kendaraan
+案内,あんないする,"information, guidance","pemanduan, informasi"
+通う,かよう,to go back and forth; to commute,pergi pulang (bolak-balik)
+連れる,つれる,"to lead, to take (a person)",membawa (orang/hewan)
+技術,ぎじゅつ,"technique, technology, skill","teknologi, teknik"
+小鳥,ことり,small bird,burung kecil
+下宿,げしゅく,"lodging, boarding house","indekos, asrama"
+ジャム,ジャム,jam,selai
+招待,しょうたいする,invitation,undangan
+鏡,かがみ,mirror,cermin
+はず,はず,it should be so,"seharusnya, mestinya"
+法律,ほうりつ,law,hukum
+進む,すすむ,"to advance, to proceed","maju, berkembang"
+楽む,たのしむ,to enjoy,menikmati
+貿易,ぼうえき,trade,perdagangan
+反対,はんたい,"oppose, opposition, resistance","menentang, oposisi"
+おる,おる,-- extra-modest expression for いる --,ada (rendah hati)
+申す,もうす,-- extra-modest (humble) expression for 言う (いう) --,"bernama, mengatakan (sopan)"
+試験,しけん,an exam,ujian
+真面目,まじめ,"diligent, serious","serius, rajin"
+ごらんになる,,-- honorific expression for みる --,melihat (sopan)
+店員,てんいん,clerk; shop-employee,pegawai toko
+泊まる,とまる,to stay (over night) (v.i.),menginap (intransitif)
+よろしい,よろしい,"(hon.) good, OK, all right","baik, boleh (sopan)"
+今夜,こんや,"this evening, tonight",malam ini
+おつり,おつり,change; balance of money returned to the purchaser,uang kembalian
+チェックする,チェックする,check,"memeriksa, mengecek"
+会話,かいわ,conversation,percakapan
+空気,くうき,"air, atmosphere","udara, atmosfer"
+交通,こうつう,"traffic, transportation","lalu lintas, transportasi"
+ワープロ,ワープロ,word processor,mesin ketik kata
+喜ぶ,よろこぶ,"to rejoice, to be delighted, to be glad","gembira, senang"
+急行,きゅうこう,express train or bus,"kereta cepat, bus ekspres"
+皆,みな,everyone,semua orang
+味,あじ,"flavor, taste",rasa
+空港,くうこう,airport,bandara
+手袋,てぶくろ,glove(s),sarung tangan
+校長,こうちょう,"principal, headmaster",kepala sekolah
+ごちそう,ごちそう,"feast, treating (someone)","hidangan mewah, jamuan"
+踊り,おどり,dance,tarian
+興味,きょうみ,interest (in something),"minat, ketertarikan"
+引っ越す,ひっこす,to move to a new place of residence,pindah rumah
+冷房,れいぼう,"cooling, air conditioning","pendingin ruangan, ac"
+都合,つごう,"circumstances, convenience","keadaan, kenyamanan waktu"
+遠慮,えんりょする,"restraint, reserve, hesitate","segan, sungkan"
+亡くなる,なくなる,to pass away,meninggal dunia
+科学,かがく,science,"sains, ilmu pengetahuan"
+はっきり,はっきり,"clearly, distinctly",dengan jelas
+差し上げる,さしあげる,-- humble expression for あげる --,memberikan (rendah hati)
+気持ち,きもち,"feeling, sensation, mood",perasaan
+祖父,そふ,grandfather,kakek (sendiri)
+港,みなと,"harbor, port",pelabuhan
+予約,よやく,reservation,"reservasi, janji"
+凄い,すごい,"terrific, great","hebat, luar biasa"
+入学,にゅうがくする,entry to school or university,masuk sekolah/kuliah
+片付ける,かたづける,"to (clean) tidy up (v.t.), to put away","merapikan, membereskan"
+写す,うつす,to copy (v.t.); to photograph,"menyalin, memotret"
+パソコン,パソコン,(personal) computer,komputer pribadi
+部長,ぶちょう,department (division) manager,"kepala bagian, manajer"
+火事,かじ,fire,kebakaran
+足す,たす,to add (numbers),menambahkan (angka)
+教会,きょうかい,church,gereja
+彼ら,かれら,they (usually male),mereka
+一杯,いっぱい,"full, to the utmost",penuh
+アメリカ,アメリカ,"America, U.S.A.",Amerika
+男性,だんせい,man; male,"pria, laki-laki"
+理由,りゆう,reason,alasan
+生産,せいさんする,production; to produce,produksi
+着物,きもの,kimono; Japanese traditional dress,kimono
+おもちゃ,おもちゃ,a toy,mainan
+暮れる,くれる,"to get dark, to come to an end","menjadi gelap, berakhir"
+釣る,つる,to fish,memancing
+～ちゃん,～ちゃん,suffix for familiar (female) person,panggilan akrab (~chan)
+打つ,うつ,"to hit, to strike",memukul
+あんな,あんな,"such, like that",seperti itu
+謝る,あやまる,to apologize,meminta maaf
+昼間,ひるま,"daytime, during the day",siang hari
+教育,きょういく,education,pendidikan
+女性,じょせい,woman,"wanita, perempuan"
+米,こめ,uncooked rice,beras
+邪魔,じゃま,"hindrance, intrusion","gangguan, halangan"
+国際,こくさい,international,internasional
+隅,すみ,corner,"sudut, pojok"
+伺う,うかがう,"humble form of 行く (いく), 聞く (きく) and 来る (くる)","bertanya, mengunjungi (sopan)"
+再来週,さらいしゅう,the week after next,dua minggu lagi
+夢,ゆめ,a dream,mimpi
+喉,のど,throat,tenggorokan
+最近,さいきん,"recently, nowadays, in recent years, most recent, latest",baru-baru ini
+周り,まわり,surroundings,"sekeliling, sekitar"
+歴史,れきし,history,sejarah
+不便,ふべん,inconvenience,"tidak praktis, merepotkan"
+血,ち,blood,darah
+～続ける,～つづける,to continue doing ~,terus melakukan ~
+毛,け,"hair, fur","rambut, bulu"
+ひどい,ひどい,"terrible, awful, unfair, cruel","kejam, parah, buruk"
+例えば,たとえば,"for example, e.g.","contohnya, misalnya"
+中々,なかなか,"very, considerably, quite","cukup, lumayan"
+随分,ずいぶん,extremely,"sangat, lumayan"
+～やすい,～やすい,easy to do ~,mudah dilakukan ~
+押し入れ,おしいれ,closet,lemali dinding
+電灯,でんとう,electric light,lampu listrik
+叱る,しかる,to scold,memarahi
+サンダル,サンダル,sandal,sandal
+びっくりする,びっくりする,to be surprised,"terkejut, kaget"
+うまい,うまい,delicious; skillful; fortunate,"enak, pandai"
+変える,かえる,"to change, to alter, to vary","mengubah, mengganti"
+講堂,こうどう,auditorium,"aula, auditorium"
+子,こ,child,anak
+沸かす,わかす,to boil,mendidihkan
+レジ,レジ,register,kasir
+しばらく,しばらく,little while,"sebentar, beberapa lama"
+特に,とくに,particularly,"khususnya, terutama"
+空く,あく,"to open, to become empty (vacant)","kosong, senggang"
+計画,けいかくする,"plan, project, schedule","rencana, proyek"
+通り,とおり,"~ Street, ~ Avenue","jalan, raya"
+下着,したぎ,underwear,pakaian dalam
+経済,けいざい,"economics, finance, economy",ekonomi
+こう,こう,"like this, this way","begini, seperti ini"
+是非,ぜひ,"certainly, by all means; without fail","tentu saja, harus"
+裏,うら,"reverse side, back","bagian belakang, sebaliknya"
+為,ため,"good, advantage, in order to","demi, untuk"
+おいでになる,おいでになる,(hon.) to be,"ada, datang (sopan)"
+変わる,かわる,"to change (v.i.), to be transformed, to vary",berubah (intransitif)
+以外,いがい,"other than, with the exception of, excepting","selain, kecuali"
+済む,すむ,"to finish, to end",selesai
+ハンバーグ,ハンバーグ,hamburger steak,bistik daging cincang
+市,し,city,kota
+引き出し,ひきだし,drawer,laci
+遊び,あそび,play,"permainan, bermain"
+支度,したくする,preparation,persiapan
+～始める,～はじめる,to start doing ~,mulai melakukan ~
+見える,みえる,to be visible; -- polite verb meaning 来る (くる) --,"terlihat, tampak"
+十分,じゅうぶん,enough,cukup
+音,おと,"sound, note","suara, bunyi"
+きっと,きっと,"surely, definitely, undoubtedly, certainly","pasti, tentu saja"
+まず,まず,"first (of all), to start with",pertama-tama
+遠く,とおく,"far away, distant","jauh, tempat jauh"
+大体,だいたい,approximately; in most cases; in general; to begin with (same as もともと),"pada umumnya, kira-kira"
+折れる,おれる,"to break, to be folded, to give in; to turn (a corner)","patah, terlipat (intransitif)"
+正しい,ただしい,correct,"benar, tepat"
+輸入,ゆにゅう,import,impor
+返事,へんじ,"reply, answer","jawaban, balasan"
+都,と,metropolitan,"ibu kota, metropolitan"
+産業,さんぎょう,industry,industri
+伝える,つたえる,"to convey (a message); to tell, to report",menyampaikan (pesan)
+お金持ち,かねもち; おかねもち,rich person,orang kaya
+説明,せつめい,explanation,penjelasan
+島,しま,island,pulau
+道具,どうぐ,tool,"alat, perkakas"
+滑る,すべる,"to slide, to slip","terpeleset, meluncur"
+それほど,それほど,to that degree; extent,tidak sebegitunya
+以上,いじょう,more than; this is all,"lebih dari, sekian"
+～まま,～まま,as it is,"seperti apa adanya, tetap"
+特急,とっきゅう,limited express (train faster than an express),kereta ekspres terbatas
+プレゼント,プレゼント,"present, gift","hadiah, kado"
+～(に) よると,～(に) よると,according to ~,menurut ~
+妻,つま,wife (humble),istri (sendiri)
+帰り,かえり,"return, coming back",perjalanan pulang
+具合,ぐあい,"condition, state, health","kondisi, kesehatan"
+堅; 硬; 固い,かたい,"solid, hard, firm","keras, kokoh"
+駐車場,ちゅうしゃじょう,parking lot,tempat parkir
+スーツ,スーツ,suit,"setelan jas, suit"
+危険,きけん,"danger, risk, hazard",bahaya
+髪,かみ,hair,rambut
+天気予報,てんきよほう,weather forecast,prakiraan cuaca
+彼女,かのじょ,girlfriend; she,dia (perempuan)
+間,あいだ,"space, interval","antara, selang waktu"
+卒業,そつぎょう,graduation,kelulusan
+それで,それで,"and (conj.), thereupon, because of that","lalu, oleh karena itu"
+枝,えだ,"branch, twig","cabang pohon, ranting"
+専門,せんもん,major; speciality,"jurusan, keahlian"
+そろそろ,そろそろ,"gradually, soon","sebentar lagi, perlahan-lahan"
+送る,おくる,"to send, to dispatch",mengirim
+あげる,あげる,to give,memberi
+騒ぐ,さわぐ,"to make noise, to clamor","membuat keributan, bising"
+尋ねる,たずねる,to inquire (same as 質問する),"bertanya, mencari tahu"
+放送,ほうそうする,broadcasting,"siaran, penyiaran"
+政治,せいじ,politics,politik
+市民,しみん,citizen,"warga kota, warga sipil"
+ファックス,ファックス,fax,"faks, faksimili"
+負ける,まける,"to lose (a game) (v.i.), to be defeated",kalah (intransitif)
+指輪,ゆびわ,(finger) ring,cincin
+田舎,いなか,"rural, countryside","kampung halaman, desa"
+見つける,みつける,"to discover, to find (v.t.)",menemukan (transitif)
+高校生,こうこうせい,high school student,siswa SMA
+講義,こうぎ,a lecture,"kuliah, ceramah"
+そんなに,そんなに,"so much, like that","sebegitunya, sangat"
+昼休み,ひるやすみ,"lunch break, noon recess",istirahat siang
+忘れ物,わすれもの,"lost article, something forgotten",barang tertinggal
+下りる,おりる,"to get down, to go; come down",turun
+腕,うで,arm (in reference to body),lengan
+訳,わけ,reason; explanation,"alasan, penjelasan"
+承知,しょうちする,"consent, acceptance","paham, menyetujui"
+日記,にっき,"diary, journal","buku harian, diari"
+高校; 高等学校,こうこう; こうとうがっこう,high school; senior high school,SMA
+似る,にる,"to resemble, to be similar",mirip
+～おわる,～おわる,to finish doing ~,selesai melakukan ~
+暖房,だんぼう,heating,pemanas ruangan
+留守,るす,absence; not at home,"tidak di rumah, pergi"
+割合,わりあい,"rate, ratio, percentage","rasio, persentase"
+寺,てら,Buddhist temple,kuil Buddha
+慣れる,なれる,to grow accustomed to,"terbiasa, menjadi biasa"
+普通,ふつう,common; usual,"biasa, lumrah"
+手伝う,てつだう,to help,membantu
+なるほど,なるほど,I see; I now understand,"begitu rupanya, paham"
+くださる,くださる,"(hon.) to give, to confer",memberikan (sopan)
+息子,むすこ,(humble) son,anak laki-laki (sendiri)
+お子さん,おこさん,(someone else's) child (polite),anak (orang lain)
+会場,かいじょう,"venue, meeting place","tempat acara, ruang pertemuan"
+笑う,わらう,"to laugh, to smile","tertawa, tersenyum"
+運ぶ,はこぶ,"to transport, to carry","mengangkut, membawa"
+文学,ぶんがく,literature,sastra
+光,ひかり,light,"cahaya, sinar"
+お見舞い,おみまい,"calling on someone who is ill, visit",menjenguk (orang sakit)
+席,せき,a seat,tempat duduk
+～様,～さま,"Mr., Mrs., Ms.",Tuan/Nyonya (~sama)
+ご存じ,ごぞんじ,"knowing, acquaintance","tahu, mengenal (sopan)"
+下る,さがる,"to descend, to drop, to fall","turun, berkurang"
+字,じ,letter; character,"huruf, karakter"
+アジア,アジア,Asia,Asia
+褒める,ほめる,to praise; to say nice things,memuji
+空く,すく,"to be empty (in reference to people), to be less crowded","menjadi senggang, sepi (orang)"
+あ,あ,Ah,"ah, oh"
+最も,もっとも,most,paling
+合う,あう,"to fit, to match","cocok, pas"
+～代,～だい,~ age; period,"generasi, era, biaya"
+最後,さいご,"last, end",terakhir
+値段,ねだん,price,harga
+退院,たいいんする,leaving hospital,keluar dari rumah sakit
+展覧会,てんらんかい,exhibition,pameran
+久しぶり,ひさしぶり,it has been a long time; for the first time in a long time,sudah lama tidak bertemu
+カーテン,カーテン,curtain,"gorden, tirai"
+汽車,きしゃ,train (steam),kereta api uap
+遅れる,おくれる,to (be) become late,terlambat
+見つかる,みつかる,"to be found (v.i.), to be discovered",ditemukan (intransitif)
+召し上がる,めしあがる,-- honorific form of 食べる (たべる) and 飲む (のむ) --,"makan, minum (sopan)"
+太る,ふとる,to gain weight,menjadi gemuk
+注射,ちゅうしゃ,injection,suntikan
+様,よう,"way, manner, kind","cara, bentuk, seperti"
+～おき,～おき,after every ~,setiap selang ~
+最初,さいしょ,"beginning, first","awal, pertama"
+御～,ご～,honorable ~,awalan sopan (go~)
+安心,あんしん,"peace of mind, relief","tenang, lega"
+直る,なおる,to be fixed,"sembuh, diperbaiki (intransitif)"
+集める,あつめる,"to collect, to gather (v.t.), to assemble",mengumpulkan (transitif)
+直す,なおす,to correct (v.t.); to fix,"memperbaiki, membetulkan (transitif)"
+続く,つづく,to be continued,"berlanjut, menerus (intransitif)"
+先輩,せんぱい,senior members of a group,senior
+約束,やくそく,"arrangement, appointment, promise",janji
+世話,せわする,looking after; to look after,"merawat, mengurus"
+近所,きんじょ,neighborhood,"tetangga, sekitar rumah"
+将来,しょうらい,(in the) future; prospects,"masa depan, prospek"
+億,おく,hundred million,ratusan juta
+数学,すうがく,mathematics,matematika
+文化,ぶんか,culture,budaya
+払う,はらう,to pay,membayar
+習慣,しゅうかん,custom (in reference to culture),"kebiasaan, adat"
+焼ける,やける,"to burn, to be roasted","terbakar, terpanggang (intransitif)"
+君,きみ,you (informal for men),kamu (informal laki-laki)
+冷える,ひえる,"to grow cold, to cool down",menjadi dingin
+点く,つく,"to be started, to be switched on",menyala (lampu)
+この間,このあいだ,"the other day, recently","baru-baru ini, tempo hari"
+格好,かっこう,"appearance, manner, shape, form, posture","penampilan, bentuk"
+かまう,,"to mind, to care about, to be concerned about","memedulikan, keberatan"
+続ける,つづける,"to continue, to keep up",melanjutkan (transitif)
+落す,おとす,"to drop, to lose","menjatuhkan, menghilangkan"
+明日,あす,tomorrow,besok
+出発,しゅっぱつする,departure,keberangkatan
+拝見,はいけんする,"(humble) (polite) seeing, look at","melihat, membaca (rendah hati)"
+割れる,われる,to break,"pecah, terbagi"
+背中,せなか,back (of body),punggung
+新聞社,しんぶんしゃ,newspaper company,perusahaan koran
+いじめる,いじめる,"to bully, to torment","merundung, mem-bully"
+回る、回す,まわる、まわす,"to go around, to revolve","berputar, memutar"
+～君,～くん,"Mr. (junior) ~, master ~",Sdr. (~くん)
+おっしゃる,おっしゃる,-- honorific expression for いう --,"berkata, berbicara (sopan)"
+眠い,ねむい,"sleepy, drowsy",mengantuk
+濡れる,ぬれる,to get wet,basah
+倒れる,たおれる,"to collapse, to break down","tumbang, roboh"
+スーパー (マーケット),スーパー (マーケット),supermarket,supermarket
+アクセサリー,アクセサリー,accessory,aksesori
+考える,かんがえる,to think (about); to consider,"memikirkan, mempertimbangkan"
+向かう,むかう,"to face, to go towards","menghadap, menuju"
+自由,じゆう,freedom,"bebas, kebebasan"
+仕方,しかた,way (of doing something),"cara, metode"
+首,くび,neck,leher
+程,ほど,"degree, extent","tingkat, sejauh"
+代わり,かわり,"substitute, replacement",pengganti
+失敗,しっぱい,"failure, mistake","gagal, kesalahan"
+工業,こうぎょう,(manufacturing) industry,industri manufaktur
+移る,うつる,to move (from a house); to transfer (from a department); to shift,"pindah, menular"
+スーツケース,スーツケース,suitcase,koper
+ひげ,ひげ,beard,"janggut, kumis"
+研究室,けんきゅうしつ,the professor's office; laboratory,"ruang dosen, laboratorium"
+工場,こうじょう,factory,pabrik
+紹介,しょうかい,an introduction,perkenalan
+けれど; けれども,けれど; けれども,"but, although","tetapi, meskipun"
+舟,ふね,"ship, boat","perahu, kapal"
+動く,うごく,to move,bergerak
+～(に) ついて,～(に) ついて,"about, concerning","tentang, mengenai"
+コンサート,コンサート,concert,konser
+虫,むし,insect,"serangga, ulat"
+優しい,やさしい,"kind (person), gentle (person), easy (problem)","baik hati, ramah"
+コンピュータ; コンピューター,コンピュータ; コンピューター,computer,komputer
+植える,うえる,to plant,menanam
+両方,りょうほう,"both sides, both parties",kedua belah pihak
+汚れる,よごれる,to become dirty,menjadi kotor
+水泳,すいえい,swimming,"renang, olahraga renang"
+経験,けいけんする,experience,"pengexperiencean, pengalaman"
+勝つ,かつ,to win,menang
+砂,すな,sand,pasir
+警察,けいさつ,police; police station,"kepolisian, polisi"
+取り替える,とりかえる,"to exchange, to replace","menukar, mengganti"
+急ぐ,いそぐ,"to hurry, to be in a hurry, to rush","terburu-buru, bergegas"
+簡単,かんたん,simple,"mudah, sederhana"
+参る,まいる,humble expression for 行く and 来る,"pergi, datang (rendah hati)"
+全然,ぜんぜん,"not at all; wholly, entirely",sama sekali tidak (negatif)
+特別,とくべつ,special,"khusus, istimewa"
+復習,ふくしゅう,"review (of lessons), revision",mengulang pelajaran
+間に合う,まにあう,to be in time for,"keburu, sempat, tepat waktu"
+役に立つ,やくにたつ,"to be helpful, to be useful","berguna, bermanfaat"
+もうすぐ,もうすぐ,very soon; in a few moments; days,sebentar lagi
+真中,まんなか,"middle, center","tengah-tengah, pusat"
+戻る,もどる,to return (v.i.); to come back,"kembali, pulang (intransitif)"
+研究,けんきゅう,"study, research, investigation","penelitian, studi"
+ケーキ,ケーキ,cake,"kue, cake"
+草,くさ,grass,rumput
+込む,こむ,to be crowded,"padat, penuh sesak"
+この頃,このごろ,"these days, nowadays","akhir-akhir ini, akhir ini"
+訪ねる,たずねる,to visit,mengunjungi
+下げる,さげる,to lower (v.t.); to hang,"menurunkan, menggantungkan (transitif)"
+花見,はなみ,cherry-blossom viewing,melihat bunga sakura
+途中,とちゅう,"on the way, midway",di tengah jalan
+入院,にゅういんする,hospitalization,"rawat inap, masuk RS"
+乗り換える,のりかえる,"to transfer (trains), to change (bus, train, etc.)",pindah kereta/kendaraan
+別れる,わかれる,"to part from, to separate",berpisah
+～町,～ちょう,the town of ~,"kota ~, kota kecil"
+安全,あんぜん,"safety, security","aman, keselamatan"
+看護婦,かんごふ,(female) nurse,perawat (wanita)
+見物,けんぶつ,sightseeing,"jalan-jalan, tamasya"
+相談,そうだんする,consultation,konsultasi
+ガソリンスタンド,ガソリンスタンド,"gas station, service station",pom bensin
+テニス,テニス,tennis,tenis
+眠る,ねむる,to sleep,"tidur, terlelap"
+上がる,あがる,"to rise, to go up","naik, mendaki (intransitif)"
+翻訳,ほんやく,translation,penerjemahan
+食事,しょくじする,meal,"makan, makanan"
+お陰,おかげ,thanks or owing to,"berkat, bantuan"
+娘,むすめ,daughter (humble),anak perempuan (sendiri)
+湯,ゆ,hot water,air panas
+競争,きょうそう,"competition, contest","persaingan, kompetisi"
+会議,かいぎ,business meeting; conference,"rapat, konferensi"
+湖,みずうみ,lake,danau
+集まる,あつまる,"to gather (v.i.), to collect",berkumpul
+～にくい,～にくい,difficult to do ~,sulit dilakukan ~
+生活,せいかつする,"living, life; to live","kehidupan, hidup"
+糸,いと,thread,benang
+関係,かんけい,"relation(ship), connection","hubungan, kaitan"
+ピアノ,ピアノ,piano,piano
+～目,～め,"number ~ sequence, ~nd; ~th",ke-~ (urutan nomor)
+番組,ばんぐみ,broadcast program,"acara, program siaran"
+急,きゅう,"urgent, sudden; steep","mendesak, tiba-tiba"
+棚,たな,"shelves, rack","rak, lemari"
+木綿,もめん,cotton,"katun, kapas"
+輸出,ゆしゅつする,export,ekspor
+タイプ,タイプ,"type, style","tipe, model"
+すり,すり,pickpocket,pencopet
+嬉しい,うれしい,to be happy; to be glad,"senang, gembira"
+アルコール,アルコール,alcohol,alkohol
+ソフト,ソフト,soft; soft hat; software,"perangkat lunak, lembut"
+神社,じんじゃ,Shinto shrine,kuil Shinto
+大分,だいぶ,"fairly well, to a large extent, considerably, pretty much","lumayan, cukup banyak"
+楽しみ,たのしみ,"pleasure, joy","kesenangan, kegembiraan"
+趣味,しゅみ,hobby; pastime,hobi
+電報,でんぽう,telegram,telegram
+家内,かない,(one's own) wife,istri (sendiri)
+指,ゆび,finger,jari
+これから,これから,"from now on, after this",mulai sekarang
+たまに,たまに,occasionally,"jarang-jarang, sekali-sekali"
+社会,しゃかい,society,"masyarakat, sosial"

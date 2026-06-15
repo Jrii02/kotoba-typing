@@ -7,42 +7,42 @@
 // FALLBACK DICTIONARIES (In case of CORS/offline load errors)
 // ==========================================
 const FALLBACK_N5 = [
-  { kanji: "食べる", kana: "たべる", arti: "makan" },
-  { kanji: "飲む", kana: "のむ", arti: "minum" },
-  { kanji: "行く", kana: "いく", arti: "pergi" },
-  { kanji: "来る", kana: "くる", arti: "datang" },
-  { kanji: "見る", kana: "みる", arti: "melihat" },
-  { kanji: "車", kana: "くるま", arti: "mobil" },
-  { kanji: "水", kana: "みず", arti: "air" },
-  { kanji: "美味しい", kana: "おいしい", arti: "enak" },
-  { kanji: "新しい", kana: "あたらしい", arti: "baru" },
-  { kanji: "本", kana: "ほん", arti: "buku" }
+  { kanji: "食べる", kana: "たべる", artiEn: "to eat", artiId: "makan" },
+  { kanji: "飲む", kana: "のむ", artiEn: "to drink", artiId: "minum" },
+  { kanji: "行く", kana: "いく", artiEn: "to go", artiId: "pergi" },
+  { kanji: "来る", kana: "くる", artiEn: "to come", artiId: "datang" },
+  { kanji: "見る", kana: "みる", artiEn: "to see", artiId: "melihat" },
+  { kanji: "車", kana: "くるま", artiEn: "car", artiId: "mobil" },
+  { kanji: "水", kana: "みず", artiEn: "water", artiId: "air" },
+  { kanji: "美味しい", kana: "おいしい", artiEn: "delicious", artiId: "enak" },
+  { kanji: "新しい", kana: "あたらしい", artiEn: "new", artiId: "baru" },
+  { kanji: "本", kana: "ほん", artiEn: "book", artiId: "buku" }
 ];
 
 const FALLBACK_N4 = [
-  { kanji: "遊ぶ", kana: "あそぶ", arti: "bermain" },
-  { kanji: "集める", kana: "あつめる", arti: "mengumpulkan" },
-  { kanji: "急ぐ", kana: "いそぐ", arti: "bergegas" },
-  { kanji: "動く", kana: "うごく", arti: "bergerak" },
-  { kanji: "送る", kana: "おくる", arti: "mengirim" },
-  { kanji: "怒る", kana: "おこる", arti: "marah" },
-  { kanji: "考える", kana: "かんがえる", arti: "memikirkan" },
-  { kanji: "技術", kana: "ぎじゅつ", arti: "teknologi" },
-  { kanji: "空港", kana: "くうこう", arti: "bandara" },
-  { kanji: "安全", kana: "あんぜん", arti: "aman" }
+  { kanji: "遊ぶ", kana: "あそぶ", artiEn: "to play", artiId: "bermain" },
+  { kanji: "集める", kana: "あつめる", artiEn: "to collect", artiId: "mengumpulkan" },
+  { kanji: "急ぐ", kana: "いそぐ", artiEn: "to hurry", artiId: "bergegas" },
+  { kanji: "動く", kana: "うごく", artiEn: "to move", artiId: "bergerak" },
+  { kanji: "送る", kana: "おくる", artiEn: "to send", artiId: "mengirim" },
+  { kanji: "怒る", kana: "おこる", artiEn: "to get angry", artiId: "marah" },
+  { kanji: "考える", kana: "かんがえる", artiEn: "to think", artiId: "memikirkan" },
+  { kanji: "技術", kana: "ぎじゅつ", artiEn: "technology", artiId: "teknologi" },
+  { kanji: "空港", kana: "くうこう", artiEn: "airport", artiId: "bandara" },
+  { kanji: "安全", kana: "あんぜん", artiEn: "safe", artiId: "aman" }
 ];
 
 const FALLBACK_N3 = [
-  { kanji: "を与える", kana: "あたえる", arti: "memberikan" },
-  { kanji: "表す", kana: "あらわす", arti: "mengekspresikan" },
-  { kanji: "現れる", kana: "あらわれる", arti: "muncul" },
-  { kanji: "致す", kana: "いたす", arti: "melakukan (rendah hati)" },
-  { kanji: "意識", kana: "いしき", arti: "kesadaran" },
-  { kanji: "一般", kana: "いっぱん", arti: "umum" },
-  { kanji: "命", kana: "いのち", arti: "nyawa / kehidupan" },
-  { kanji: "祈る", kana: "いのる", arti: "berdoa" },
-  { kanji: "祝う", kana: "いわう", arti: "merayakan" },
-  { kanji: "得る", kana: "える", arti: "mendapatkan" }
+  { kanji: "を与える", kana: "あたえる", artiEn: "to give", artiId: "memberikan" },
+  { kanji: "表す", kana: "あらわす", artiEn: "to express", artiId: "mengekspresikan" },
+  { kanji: "現れる", kana: "あらわれる", artiEn: "to appear", artiId: "muncul" },
+  { kanji: "致す", kana: "いたす", artiEn: "to do (humble)", artiId: "melakukan (rendah hati)" },
+  { kanji: "意識", kana: "いしき", artiEn: "consciousness", artiId: "kesadaran" },
+  { kanji: "一般", kana: "いっぱん", artiEn: "general", artiId: "umum" },
+  { kanji: "命", kana: "いのち", artiEn: "life", artiId: "nyawa / kehidupan" },
+  { kanji: "祈る", kana: "いのる", artiEn: "to pray", artiId: "berdoa" },
+  { kanji: "祝う", kana: "いわう", artiEn: "to celebrate", artiId: "merayakan" },
+  { kanji: "得る", kana: "える", artiEn: "to get", artiId: "mendapatkan" }
 ];
 
 // ==========================================
@@ -212,7 +212,8 @@ const state = {
   currentVocabQuery: '',
   
   // Mastery Profile for weighted SRS in gameplay
-  masteryProfile: {} // { "たべる": 3, "おいしい": -2 }
+  masteryProfile: {}, // { "たべる": 3, "おいしい": -2 }
+  clueLanguage: 'id' // 'id' or 'en'
 };
 
 // ==========================================
@@ -233,6 +234,7 @@ const DOM = {
   lvlN4: document.getElementById('lvl-n4'),
   lvlN3: document.getElementById('lvl-n3'),
   settingKanji: document.getElementById('setting-kanji'),
+  settingLanguage: document.getElementById('setting-language'),
   btnStart: document.getElementById('btn-start'),
   
   // Gameplay HUD
@@ -305,34 +307,42 @@ async function loadDatabases() {
   const normalizeCSVData = (data) => {
     if (!Array.isArray(data) || data.length === 0) return [];
     
-    // Inspect keys of the first item
     const firstItem = data[0];
     const keys = Object.keys(firstItem);
     
-    // Default key mappings based on indices
     let kanjiKey = keys[0];
     let kanaKey = keys[1];
-    let artiKey = keys[2];
+    let artiEnKey = keys[2];
+    let artiIdKey = keys[3] || keys[2];
     
-    // Inspect headers for keyword matching
     keys.forEach(key => {
       const kLower = key.toLowerCase().trim();
       if (kLower.includes('expression') || kLower.includes('kanji') || kLower === 'a') {
         kanjiKey = key;
       } else if (kLower.includes('reading') || kLower.includes('kana') || kLower.includes('baca') || kLower === 'b') {
         kanaKey = key;
-      } else if (kLower.includes('meaning') || kLower.includes('arti') || kLower.includes('indo') || kLower === 'c') {
-        artiKey = key;
+      } else if (kLower === 'meaning' || kLower === 'arti_english' || kLower === 'en') {
+        artiEnKey = key;
+      } else if (kLower.includes('indonesian') || kLower.includes('indonesia') || kLower.includes('indo') || kLower === 'id') {
+        artiIdKey = key;
       }
+    });
+    
+    // Secondary fallback mapping
+    keys.forEach(key => {
+      const kLower = key.toLowerCase().trim();
+      if (kLower === 'meaning') artiEnKey = key;
+      if (kLower === 'indonesian_meaning') artiIdKey = key;
     });
     
     return data.map(item => {
       return {
         kanji: (item[kanjiKey] || '').trim(),
         kana: (item[kanaKey] || '').trim(),
-        arti: (item[artiKey] || '').trim()
+        artiEn: (item[artiEnKey] || '').trim(),
+        artiId: (item[artiIdKey] || item[artiEnKey] || '').trim()
       };
-    }).filter(item => item.kana && item.arti);
+    }).filter(item => item.kana && (item.artiEn || item.artiId));
   };
 
   try {
@@ -516,10 +526,11 @@ function renderVocabList() {
     filtered = filtered.filter(w => w.level === filter);
   }
 
-  // Filter by search query (Indonesian, Kanji, or Kana)
+  // Filter by search query (Indonesian, English, Kanji, or Kana)
   if (query) {
     filtered = filtered.filter(w => 
-      w.arti.toLowerCase().includes(query) ||
+      (w.artiId && w.artiId.toLowerCase().includes(query)) ||
+      (w.artiEn && w.artiEn.toLowerCase().includes(query)) ||
       w.kana.includes(query) ||
       (w.kanji && w.kanji.includes(query))
     );
@@ -559,13 +570,13 @@ function renderVocabList() {
       jpContainer.appendChild(kanaSpan);
     }
     
-    // Indonesian meaning + difficulty badge container
+    // Indonesian/English meaning + difficulty badge container
     const idContainer = document.createElement('div');
     idContainer.className = 'vocab-item-id-container';
     
     const idSpan = document.createElement('span');
     idSpan.className = 'vocab-item-id';
-    idSpan.textContent = word.arti;
+    idSpan.textContent = (word.artiId === word.artiEn) ? word.artiId : `${word.artiId} / ${word.artiEn}`;
     idContainer.appendChild(idSpan);
     
     if (isDifficult) {
@@ -656,13 +667,15 @@ function nextWord() {
   // Get mastery level
   const mastery = getWordMastery(state.currentWord);
   
+  const wordClue = state.clueLanguage === 'en' ? state.currentWord.artiEn : state.currentWord.artiId;
+  
   // Render targets
   if (mastery < 0) {
     DOM.kanjiClue.classList.add('difficult');
-    DOM.targetMeaning.innerHTML = `<span class="txt-danger" style="font-size: 0.8rem; display: block; margin-bottom: 4px; font-weight: 700; letter-spacing: 0.5px;">⚠️ REVIU (SULIT)</span>${state.currentWord.arti}`;
+    DOM.targetMeaning.innerHTML = `<span class="txt-danger" style="font-size: 0.8rem; display: block; margin-bottom: 4px; font-weight: 700; letter-spacing: 0.5px;">⚠️ REVIU (SULIT)</span>${wordClue}`;
   } else {
     DOM.kanjiClue.classList.remove('difficult');
-    DOM.targetMeaning.textContent = state.currentWord.arti;
+    DOM.targetMeaning.textContent = wordClue;
   }
   
   // Show/Hide Kanji based on setting (Only if the word actually has distinct Kanji)
@@ -978,6 +991,18 @@ function loadSoundSettings() {
   }
 }
 
+function loadLanguageSettings() {
+  const savedLang = localStorage.getItem('kotoba_clue_language');
+  if (savedLang !== null) {
+    state.clueLanguage = savedLang;
+  } else {
+    state.clueLanguage = 'id';
+  }
+  if (DOM.settingLanguage) {
+    DOM.settingLanguage.value = state.clueLanguage;
+  }
+}
+
 function updateSoundUI(enabled) {
   if (enabled) {
     DOM.soundOnIcon.classList.remove('hidden');
@@ -1062,6 +1087,14 @@ function bindEvents() {
     updateSoundUI(currentlyEnabled);
   });
 
+  // Clue language selection select
+  if (DOM.settingLanguage) {
+    DOM.settingLanguage.addEventListener('change', (e) => {
+      state.clueLanguage = e.target.value;
+      localStorage.setItem('kotoba_clue_language', state.clueLanguage);
+    });
+  }
+
   // VOCABULARY SCREEN CONTROLS
   DOM.btnOpenVocab.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -1128,5 +1161,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   // LocalStorage check
   loadHighScore();
   loadSoundSettings();
+  loadLanguageSettings();
   loadMastery();
 });
