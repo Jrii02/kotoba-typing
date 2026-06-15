@@ -65,34 +65,27 @@
         </div>
 
         <div class="config-section">
-          <h2 class="config-title">PILIH KATEGORI KATA</h2>
+          <h2 class="config-title">PILIH LEVEL JLPT</h2>
           <div class="category-grid">
-            <label class="category-pill" for="cat-kerja">
-              <input type="checkbox" id="cat-kerja" checked>
+            <label class="category-pill" for="lvl-n5">
+              <input type="radio" name="level-select" id="lvl-n5" value="N5" checked>
               <div class="pill-design">
-                <span class="pill-jp">動詞</span>
-                <span class="pill-id">Kata Kerja</span>
+                <span class="pill-jp">N5</span>
+                <span class="pill-id">Dasar 1</span>
               </div>
             </label>
-            <label class="category-pill" for="cat-sifat">
-              <input type="checkbox" id="cat-sifat" checked>
+            <label class="category-pill" for="lvl-n4">
+              <input type="radio" name="level-select" id="lvl-n4" value="N4">
               <div class="pill-design">
-                <span class="pill-jp">形容詞</span>
-                <span class="pill-id">Kata Sifat</span>
+                <span class="pill-jp">N4</span>
+                <span class="pill-id">Dasar 2</span>
               </div>
             </label>
-            <label class="category-pill" for="cat-benda">
-              <input type="checkbox" id="cat-benda" checked>
+            <label class="category-pill" for="lvl-n3">
+              <input type="radio" name="level-select" id="lvl-n3" value="N3">
               <div class="pill-design">
-                <span class="pill-jp">名詞</span>
-                <span class="pill-id">Kata Benda</span>
-              </div>
-            </label>
-            <label class="category-pill" for="cat-keterangan">
-              <input type="checkbox" id="cat-keterangan" checked>
-              <div class="pill-design">
-                <span class="pill-jp">副詞</span>
-                <span class="pill-id">Kata Keterangan</span>
+                <span class="pill-jp">N3</span>
+                <span class="pill-id">Menengah</span>
               </div>
             </label>
           </div>
@@ -307,10 +300,9 @@
           
           <div class="vocab-filter-row">
             <button class="filter-pill active" data-filter="all">Semua</button>
-            <button class="filter-pill" data-filter="kerja">動詞 (Kerja)</button>
-            <button class="filter-pill" data-filter="sifat">形容詞 (Sifat)</button>
-            <button class="filter-pill" data-filter="benda">名詞 (Benda)</button>
-            <button class="filter-pill" data-filter="keterangan">副詞 (Ket)</button>
+            <button class="filter-pill" data-filter="N5">JLPT N5</button>
+            <button class="filter-pill" data-filter="N4">JLPT N4</button>
+            <button class="filter-pill" data-filter="N3">JLPT N3</button>
             <button class="filter-pill" data-filter="reviu">⚠️ Reviu</button>
           </div>
         </div>

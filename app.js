@@ -6,60 +6,43 @@
 // ==========================================
 // FALLBACK DICTIONARIES (In case of CORS/offline load errors)
 // ==========================================
-const FALLBACK_VERBS = [
+const FALLBACK_N5 = [
   { kanji: "食べる", kana: "たべる", arti: "makan" },
   { kanji: "飲む", kana: "のむ", arti: "minum" },
   { kanji: "行く", kana: "いく", arti: "pergi" },
   { kanji: "来る", kana: "くる", arti: "datang" },
   { kanji: "見る", kana: "みる", arti: "melihat" },
-  { kanji: "話す", kana: "はなす", arti: "berbicara" },
-  { kanji: "書く", kana: "かく", arti: "menulis" },
-  { kanji: "読む", kana: "よむ", arti: "membaca" },
-  { kanji: "聞く", kana: "きく", arti: "mendengar" },
-  { kanji: "買う", kana: "かう", arti: "membeli" },
-  { kanji: "する", kana: "する", arti: "melakukan" },
-  { kanji: "ある", kana: "ある", arti: "ada (benda mati)" },
-  { kanji: "いる", kana: "いる", arti: "ada (benda hidup)" },
-  { kanji: "待つ", kana: "まつ", arti: "menunggu" },
-  { kanji: "帰る", kana: "かえる", arti: "pulang" }
-];
-
-const FALLBACK_ADJECTIVES = [
-  { kanji: "美味しい", kana: "おいしい", arti: "enak" },
-  { kanji: "大きい", kana: "おおきい", arti: "besar" },
-  { kanji: "小さい", kana: "ちいさい", arti: "kecil" },
-  { kanji: "新しい", kana: "あたらしい", arti: "baru" },
-  { kanji: "古い", kana: "ふるい", arti: "lama/tua" },
-  { kanji: "良い", kana: "いい", arti: "baik/bagus" },
-  { kanji: "悪い", kana: "わるい", arti: "buruk/jelek" },
-  { kanji: "高い", kana: "たかい", arti: "tinggi/mahal" },
-  { kanji: "安い", kana: "やすい", arti: "murah" },
-  { kanji: "面白い", kana: "おもしろい", arti: "menarik/lucu" },
-  { kanji: "難しい", kana: "むずかしい", arti: "sulit" },
-  { kanji: "楽しい", kana: "たのしい", arti: "menyenangkan" }
-];
-
-const FALLBACK_NOUNS = [
-  { kanji: "日本", kana: "にほん", arti: "Jepang" },
-  { kanji: "先生", kana: "せんせい", arti: "guru" },
-  { kanji: "学校", kana: "がっこう", arti: "sekolah" },
-  { kanji: "友達", kana: "ともだち", arti: "teman" },
-  { kanji: "水", kana: "みず", arti: "air" },
-  { kanji: "本", kana: "ほん", arti: "buku" },
   { kanji: "車", kana: "くるま", arti: "mobil" },
-  { kanji: "お金", kana: "おかね", arti: "uang" },
-  { kanji: "時間", kana: "じかん", arti: "waktu" },
-  { kanji: "人", kana: "ひと", arti: "orang" }
+  { kanji: "水", kana: "みず", arti: "air" },
+  { kanji: "美味しい", kana: "おいしい", arti: "enak" },
+  { kanji: "新しい", kana: "あたらしい", arti: "baru" },
+  { kanji: "本", kana: "ほん", arti: "buku" }
 ];
 
-const FALLBACK_ADVERBS = [
-  { kanji: "いつも", kana: "いつも", arti: "selalu" },
-  { kanji: "とても", kana: "とても", arti: "sangat" },
-  { kanji: "少し", kana: "すこし", arti: "sedikit" },
-  { kanji: "また", kana: "また", arti: "lagi" },
-  { kanji: "もっと", kana: "もっと", arti: "lebih" },
-  { kanji: "ゆっくり", kana: "ゆっくり", arti: "perlahan-lahan" },
-  { kanji: "早く", kana: "はやく", arti: "dengan cepat" }
+const FALLBACK_N4 = [
+  { kanji: "遊ぶ", kana: "あそぶ", arti: "bermain" },
+  { kanji: "集める", kana: "あつめる", arti: "mengumpulkan" },
+  { kanji: "急ぐ", kana: "いそぐ", arti: "bergegas" },
+  { kanji: "動く", kana: "うごく", arti: "bergerak" },
+  { kanji: "送る", kana: "おくる", arti: "mengirim" },
+  { kanji: "怒る", kana: "おこる", arti: "marah" },
+  { kanji: "考える", kana: "かんがえる", arti: "memikirkan" },
+  { kanji: "技術", kana: "ぎじゅつ", arti: "teknologi" },
+  { kanji: "空港", kana: "くうこう", arti: "bandara" },
+  { kanji: "安全", kana: "あんぜん", arti: "aman" }
+];
+
+const FALLBACK_N3 = [
+  { kanji: "を与える", kana: "あたえる", arti: "memberikan" },
+  { kanji: "表す", kana: "あらわす", arti: "mengekspresikan" },
+  { kanji: "現れる", kana: "あらわれる", arti: "muncul" },
+  { kanji: "致す", kana: "いたす", arti: "melakukan (rendah hati)" },
+  { kanji: "意識", kana: "いしき", arti: "kesadaran" },
+  { kanji: "一般", kana: "いっぱん", arti: "umum" },
+  { kanji: "命", kana: "いのち", arti: "nyawa / kehidupan" },
+  { kanji: "祈る", kana: "いのる", arti: "berdoa" },
+  { kanji: "祝う", kana: "いわう", arti: "merayakan" },
+  { kanji: "得る", kana: "える", arti: "mendapatkan" }
 ];
 
 // ==========================================
@@ -211,10 +194,9 @@ const state = {
   correctCount: 0,
   wrongCount: 0,
   
-  verbsList: [],
-  adjectivesList: [],
-  nounsList: [],
-  adverbsList: [],
+  n5List: [],
+  n4List: [],
+  n3List: [],
   activePool: [], // Currently selected words filter pool
   gameWords: [],  // Randomized list for current game run
   currentWord: null,
@@ -247,10 +229,9 @@ const DOM = {
   soundOnIcon: document.getElementById('sound-on-icon'),
   soundOffIcon: document.getElementById('sound-off-icon'),
   labelHighScore: document.getElementById('label-high-score'),
-  catKerja: document.getElementById('cat-kerja'),
-  catSifat: document.getElementById('cat-sifat'),
-  catBenda: document.getElementById('cat-benda'),
-  catKeterangan: document.getElementById('cat-keterangan'),
+  lvlN5: document.getElementById('lvl-n5'),
+  lvlN4: document.getElementById('lvl-n4'),
+  lvlN3: document.getElementById('lvl-n3'),
   settingKanji: document.getElementById('setting-kanji'),
   btnStart: document.getElementById('btn-start'),
   
@@ -336,11 +317,11 @@ async function loadDatabases() {
     // Inspect headers for keyword matching
     keys.forEach(key => {
       const kLower = key.toLowerCase().trim();
-      if (kLower.includes('kanji') || kLower === 'a') {
+      if (kLower.includes('expression') || kLower.includes('kanji') || kLower === 'a') {
         kanjiKey = key;
-      } else if (kLower.includes('kana') || kLower.includes('baca') || kLower === 'b') {
+      } else if (kLower.includes('reading') || kLower.includes('kana') || kLower.includes('baca') || kLower === 'b') {
         kanaKey = key;
-      } else if (kLower.includes('arti') || kLower.includes('indo') || kLower === 'c') {
+      } else if (kLower.includes('meaning') || kLower.includes('arti') || kLower.includes('indo') || kLower === 'c') {
         artiKey = key;
       }
     });
@@ -356,24 +337,21 @@ async function loadDatabases() {
 
   try {
     // Attempt parallel load of all databases
-    const [verbs, adjectives, nouns, adverbs] = await Promise.all([
-      loadCSV('data/kata_kerja.csv'),
-      loadCSV('data/kata_sifat.csv'),
-      loadCSV('data/kata_benda.csv'),
-      loadCSV('data/kata_keterangan.csv')
+    const [n5Data, n4Data, n3Data] = await Promise.all([
+      loadCSV('data/N5.csv'),
+      loadCSV('data/N4.csv'),
+      loadCSV('data/N3.csv')
     ]);
     
-    state.verbsList = normalizeCSVData(verbs);
-    state.adjectivesList = normalizeCSVData(adjectives);
-    state.nounsList = normalizeCSVData(nouns);
-    state.adverbsList = normalizeCSVData(adverbs);
-    console.log(`Databases loaded! Verbs: ${state.verbsList.length}, Adjectives: ${state.adjectivesList.length}, Nouns: ${state.nounsList.length}, Adverbs: ${state.adverbsList.length}`);
+    state.n5List = normalizeCSVData(n5Data);
+    state.n4List = normalizeCSVData(n4Data);
+    state.n3List = normalizeCSVData(n3Data);
+    console.log(`Databases loaded! N5: ${state.n5List.length}, N4: ${state.n4List.length}, N3: ${state.n3List.length}`);
   } catch (error) {
     console.error("Failed to load CSV files via Fetch. Switching to static fallback dictionaries.", error);
-    state.verbsList = FALLBACK_VERBS;
-    state.adjectivesList = FALLBACK_ADJECTIVES;
-    state.nounsList = FALLBACK_NOUNS;
-    state.adverbsList = FALLBACK_ADVERBS;
+    state.n5List = FALLBACK_N5;
+    state.n4List = FALLBACK_N4;
+    state.n3List = FALLBACK_N3;
   }
 }
 
@@ -422,24 +400,19 @@ function startGame(revengeOnly = false) {
     state.gameWords = shuffleArray(state.mistakesList.map(m => m.word));
     state.isRevengeMode = true;
   } else {
-    // Normal Mode: create active pool based on selected checkboxes
+    // Normal Mode: create active pool based on selected level
     state.activePool = [];
-    if (DOM.catKerja.checked) {
-      state.activePool = state.activePool.concat(state.verbsList);
-    }
-    if (DOM.catSifat.checked) {
-      state.activePool = state.activePool.concat(state.adjectivesList);
-    }
-    if (DOM.catBenda.checked) {
-      state.activePool = state.activePool.concat(state.nounsList);
-    }
-    if (DOM.catKeterangan.checked) {
-      state.activePool = state.activePool.concat(state.adverbsList);
+    if (DOM.lvlN5.checked) {
+      state.activePool = state.n5List;
+    } else if (DOM.lvlN4.checked) {
+      state.activePool = state.n4List;
+    } else if (DOM.lvlN3.checked) {
+      state.activePool = state.n3List;
     }
     
-    // Fallback safeguard in case no category is selected
+    // Fallback safeguard
     if (state.activePool.length === 0) {
-      state.activePool = state.verbsList.concat(state.adjectivesList, state.nounsList, state.adverbsList);
+      state.activePool = state.n5List;
     }
     
     // Load fresh mastery data from localStorage
@@ -528,20 +501,19 @@ function renderVocabList() {
   const query = state.currentVocabQuery.toLowerCase().trim();
   DOM.vocabListItems.innerHTML = '';
 
-  // Concatenate lists and mark their type
+  // Concatenate lists and mark their level
   const allWords = [
-    ...state.verbsList.map(w => ({ ...w, type: 'kerja' })),
-    ...state.adjectivesList.map(w => ({ ...w, type: 'sifat' })),
-    ...state.nounsList.map(w => ({ ...w, type: 'benda' })),
-    ...state.adverbsList.map(w => ({ ...w, type: 'keterangan' }))
+    ...state.n5List.map(w => ({ ...w, level: 'N5' })),
+    ...state.n4List.map(w => ({ ...w, level: 'N4' })),
+    ...state.n3List.map(w => ({ ...w, level: 'N3' }))
   ];
 
-  // Filter by type or mastery
+  // Filter by level or mastery
   let filtered = allWords;
   if (filter === 'reviu') {
     filtered = filtered.filter(w => getWordMastery(w) < 0);
   } else if (filter !== 'all') {
-    filtered = filtered.filter(w => w.type === filter);
+    filtered = filtered.filter(w => w.level === filter);
   }
 
   // Filter by search query (Indonesian, Kanji, or Kana)
