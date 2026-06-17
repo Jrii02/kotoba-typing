@@ -1151,7 +1151,36 @@ function bindEvents() {
 // ==========================================
 // INITIAL SETUP ON WINDOW LOAD
 // ==========================================
+function initViewportHandling() {
+  const adjustViewport = () => {
+    if (window.visualViewport) {
+      const vh = window.visualViewport.height;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      
+      // If visual viewport is significantly shorter than layout height (device screen height), keyboard is open.
+      if (vh < window.innerHeight * 0.85) {
+        document.body.classList.add('keyboard-open');
+        window.scrollTo(0, 0);
+      } else {
+        document.body.classList.remove('keyboard-open');
+      }
+    } else {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+    }
+  };
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', adjustViewport);
+    window.visualViewport.addEventListener('scroll', adjustViewport);
+  }
+  window.addEventListener('resize', adjustViewport);
+  adjustViewport();
+}
+
 window.addEventListener('DOMContentLoaded', async () => {
+  // Init viewport handling for mobile keyboard support
+  initViewportHandling();
+
   // Load local database CSVs
   await loadDatabases();
   
@@ -1164,3 +1193,4 @@ window.addEventListener('DOMContentLoaded', async () => {
   loadLanguageSettings();
   loadMastery();
 });
+

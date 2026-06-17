@@ -55,6 +55,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  min-height: var(--vh, 100vh);
   margin: 0;
   padding: 16px;
   overflow-x: hidden;
@@ -1428,3 +1429,104 @@ body {
     max-height: 110px;
   }
 }
+
+/* ==========================================
+   KEYBOARD OPEN ADJUSTMENTS
+   ========================================== */
+body.keyboard-open {
+  height: var(--vh, 100vh);
+  min-height: var(--vh, 100vh);
+  overflow: hidden; /* Lock scroll so layout does not shift up */
+  padding: 6px 12px;
+  align-items: center; /* keep centered or flex-start if too small */
+}
+
+body.keyboard-open .app-container {
+  gap: 6px;
+  height: 100%;
+}
+
+body.keyboard-open .app-header {
+  display: none !important;
+}
+
+body.keyboard-open .app-footer {
+  display: none !important;
+}
+
+body.keyboard-open .glass-panel {
+  padding: 12px;
+  border-radius: var(--radius-md);
+  box-shadow: none; /* performance optimization */
+}
+
+/* Gameplay adjustments when keyboard is open */
+body.keyboard-open .game-hud {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+}
+
+body.keyboard-open .hud-value {
+  font-size: 1.1rem;
+}
+
+body.keyboard-open .hud-timer-container {
+  max-width: 80px;
+}
+
+body.keyboard-open .timer-text-overlay {
+  font-size: 0.95rem;
+}
+
+body.keyboard-open .streak-announcer {
+  top: 60px;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+}
+
+body.keyboard-open .question-container {
+  min-height: 90px;
+  margin-bottom: 8px;
+  padding: 10px;
+  gap: 4px;
+}
+
+body.keyboard-open .kanji-clue-box {
+  font-size: 1.1rem;
+  padding: 2px 10px;
+}
+
+body.keyboard-open .meaning-display {
+  font-size: 1.4rem !important;
+}
+
+body.keyboard-open .input-form {
+  margin-bottom: 6px;
+}
+
+body.keyboard-open .input-wrapper input {
+  height: 44px;
+  font-size: 1rem;
+  padding: 0 44px 0 14px;
+}
+
+body.keyboard-open .submit-btn {
+  right: 6px;
+  width: 32px;
+  height: 32px;
+}
+
+body.keyboard-open .submit-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+body.keyboard-open .input-hint {
+  display: none !important;
+}
+
+body.keyboard-open .game-footer {
+  margin-top: 2px;
+  font-size: 0.75rem;
+}
+
